@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>Send Motor values</title>
+</head>
+  <link rel="stylesheet" href="style.css">
+  
+<body>
+
+<div class="slidecontainer">
+
+	<iframe name="iframe1" id="frame1" style="display: none;"></iframe>
+        <form id="form1" action="db_connect" method = "POST" target="frame1">
+
+
+<!  <img src="SMlogo.png" alt="SmartMethods" width="276" height="94">
+
+<br>
+<br>
+
+<fieldset>
+  <legend>Choose the below slides to move Motors:</legend>
+  
+
+
+ 
+		<div class="M1>
+
+		<label for="value1">M 1</label><input type="range" min="0" max="180" value="0" class="slider" id="myRange1" name= "M1">
+		<p>Value: <span style="color:red" id="V1"></span></p>
+		</div>
+	
+		<div class="M2">
+		<label for="value2">M 2</label><input type="range" min="0" max="180" value="0" class="slider" id="myRange2" name = "M2">
+		<p>Value: <span style="color:red"id="V2"></span></p>
+		</div>
+	
+		<div class="M3">
+		<label for="value3">M 3</label><input type="range" min="0" max="180" value="0" class="slider" id="myRange3" name="M3">
+		<p>Value: <span style="color:red"id="V3"></span></p>
+		</div>
+		
+		<div class="M4">
+		<label for="value4">M 4</label><input type="range" min="0" max="180" value="0" class="slider" id="myRange4" name= "M4">
+		<p>Value: <span style="color:red" id="V4"></span></p>
+		</div>
+		
+		<div class="M5">
+		<label for="value5">M 5</label><input type="range" min="0" max="180" value="0" class="slider" id="myRange5" name= "M5">
+		<p>Value: <span style="color:red" id="V5"></span></p>
+		</div>
+		
+		<div class="M6">
+		<label for="value6">M 6</label><input type="range" min="0" max="180" value="0" class="slider" id="myRange6" name="M6">
+		<p>Value: <span style="color:red" id="V6"></span></p>
+		</div>
+		
+		
+		
+		<input type="submit" value="Run">
+		<input type="submit" value="Save">
+
+		</form>
+		
+		
+		</div>
+		
+		</fieldset>
+
+</body>
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "b0268e97-651d-4c7c-b61c-832e3a0497fc", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "14069845-17b2-418f-bafa-a82d0f6a9b1c", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+ <script src="jv.js"></script> 
+</html>
